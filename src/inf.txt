@@ -1,0 +1,13 @@
+background_b: 255
+background_g: 86
+background_r: 200
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_tyti_lap_15__33026: 'http://TYTI-LAP-15:33026/'}
+rosversion: '1.12.14
+
+  '
+run_id: 74bc90e0-3b5f-11e9-ae13-e4a7a0a255f3
+
