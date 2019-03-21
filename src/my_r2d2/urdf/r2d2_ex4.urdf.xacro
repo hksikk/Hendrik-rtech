@@ -43,6 +43,16 @@
     <xacro:default_inertial mass="10"/>
   </link>
 
+  <link name="base_footprint">
+  <origin xyz="0 0 0"/>
+  </link>
+  
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 ${(baselen + wheeldiam/2)} "/>
+  </joint>
+
   <xacro:macro name="wheel" params="prefix suffix reflect">
 
     <link name="${prefix}_${suffix}_wheel">
